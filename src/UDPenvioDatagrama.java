@@ -7,7 +7,7 @@ public class UDPenvioDatagrama {
     public static void main(String[] argv) throws Exception {
         Scanner sc = new Scanner(System.in);
         int port = 12345; //puerto por el que escucha el proceso que va a recibir el mensaje
-        InetAddress destino = InetAddress.getLocalHost();
+        InetAddress destino;// = InetAddress.getLocalHost();
         System.out.println("Introduce IP destino");//IP host
         String ipDestino = sc.nextLine();
         destino=InetAddress.getByName(ipDestino); //Por si queremos enviar a una IP concreta
